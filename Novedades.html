@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tienda gucci</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/gucci7.png">
+  <link rel="stylesheet" href="css/personalizado.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a class="navbar-barnds" href="index.html">
+  </a>
+  <style>
+    .w3-sidebar a {
+      font-family: "Roboto", sans-serif
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .w3-wide {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="w3-content" style="max-width:1200px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <img src="img/logo.png" alt="Descripción del logo" width="50" height="50">
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="#" class="w3-bar-item w3-button">Camisas</a>
+      <a href="#" class="w3-bar-item w3-button">Vestidos</a>
+      <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+        Jeans <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+        <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+            class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+      </div>
+      <a href="#" class="w3-bar-item w3-button"></a>
+      <a href="Index.html">Inicio</a>
+      <a href="Nosotros.html">Nosotros</a>
+      <a href="Servicios adicionales.html"> Servicios adicionales</a>
+      <a href="otros.html"> otros</a>
+      <a href="Novedades.html"> Novedades</a>
+      <a href="Venta de productos.html"> venta de productos</a>
+    </div>
+
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left">Jeans</p>
+      <p class="w3-right">
+        <i class="fa fa-shopping-cart w3-margin-right"></i>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+      <img src="Slide/tienda (1).gif" alt="Jeans" style="width:100%">
+      <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+        <h1 class="w3-jumbo w3-hide-small">Nuevas llegadas</h1>
+        <h1 class="w3-hide-large w3-hide-medium">Nuevas llegadas</h1>
+        <h1 class="w3-hide-small">COLLECION 2023</h1>
+        <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">COMPRAR AHORA</a></p>
+      </div>
+    </div>
+
+    <div class="w3-container w3-text-grey" id="jeans">
+      <p>8 artículos</p>
+    </div>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="img/messi.png" style="width:100%">
+          <p>Vaqueros pitillo rotos
+            <br><b>$24.99</b>
+          </p>
+        </div>
+        <div class="w3-container">
+          <img src="img/gucci2.png" style="width:100%">
+          <p>sueter<br><b>$19.99</b></p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="img/j1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">NUEVO</span>
+            <div class="w3-display-middle w3-display-hover">
+              <button class="w3-button w3-black">Comprar ahora <i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <p>Vaqueros mega rasgados<br><b>$19.99</b></p>
+        </div>
+        <div class="w3-container">
+          <img src="img/gucci7.png" style="width:100%">
+          <p>nuestro logo<br><b>$20.50</b></p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="img/j2.jpg" style="width:100%">
+          <p>sueter jovenil<br><b>$20.50</b></p>
+        </div>
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="img/v1.jpg" style="width:100%">
+            <span class="w3-tag w3-display-topleft">Sale</span>
+            <div class="w3-display-middle w3-display-hover">
+              <button class="w3-button w3-black">Comprar ahora<i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <p>vestido <br><b class="w3-text-red">$14.99</b></p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <img src="img/j4.webp" style="width:100%">
+          <p>nuestro logo <br><b>$14.99</b></p>
+        </div>
+        <div class="w3-container">
+          <img src="img/Rectángulo PowerClip - Relleno_ C_0 M_0 Y_0 K_10, Contorno_ Ninguna.png" style="width:100%">
+          <p>sueteres con un buen borde <br><b>$24.99</b></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscribe section -->
+    <div class="w3-container w3-black w3-padding-32">
+      <h1>Subscribe</h1>
+      <p>Para obtener ofertas especiales y trato VIP:</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+      <button class="w3-button w3-black">Subcribete<i class="fa fa-shopping-cart"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+
+        </div>
+
+        <div class="w3-col s4">
+          <h4>acerca de </h4>
+          <p><a href="#">Sobre nosotros</a></p>
+          <p><a href="#">Estamos contratando</a></p>
+          <p><a href="#">Soporte</a></p>
+          <p><a href="#">Buscar tienda</a></p>
+          <p><a href="#">Envío</a></p>
+          <p><a href="#">pago</a></p>
+          <p><a href="#">Tarjeta regalo</a></p>
+          <p><a href="#">volver</a></p>
+          <p><a href="#">ayuda</a></p>
+        </div>
+
+        <div class="w3-col s4 w3-justify">
+          <h4>datos </h4>
+          <p><i class="fa fa-fw fa-map-marker"></i>Empresa gucci</p>
+          <p><i class="fa fa-fw fa-phone"></i> 50466754634</p>
+          <p><i class="fa fa-fw fa-envelope"></i> williansanchez@gmail.com</p>
+
+          <br>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24"> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+        target="_blank" class="w3-hover-opacity"></a></div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- Newsletter Modal -->
+  <div id="newsletter" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+      <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('newsletter').style.display='none'"
+          class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+        <h2 class="w3-wide">HOJA INFORMATIVA</h2>
+        <p>Únase a nuestra lista de correo para recibir actualizaciones sobre novedades y ofertas especiales.</p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+          onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Accordion 
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
